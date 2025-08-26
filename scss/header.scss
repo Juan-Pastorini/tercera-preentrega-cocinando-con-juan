@@ -1,0 +1,24 @@
+// --------------------
+// HEADER
+// --------------------
+header {
+  @include flex-center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  nav {
+    ul {
+      @include flex-center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      list-style: none;
+      margin-top: 1rem;
+
+      li a {
+        font-weight: bold;
+        color: $secondary-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}

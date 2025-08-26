@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff8f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-image: url("../assets/cocinero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 0;
+}
+body * {
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+header nav ul li a {
+  font-weight: bold;
+  color: #ff4500;
+  text-decoration: underline;
+}
+
+main {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+main section h2 {
+  text-align: center;
+  color: #a20000;
+}
+main section p {
+  text-align: center;
+  color: #000;
+  margin-bottom: 2rem;
+}
+main section:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main section:first-child img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.listas-comidas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #ccc;
+}
+.listas-comidas article {
+  font-weight: bolder;
+  color: #000;
+  border: 2px solid #a20000;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.listas-comidas article:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.listas-comidas article h3 {
+  text-align: center;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.listas-comidas article ul {
+  list-style: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.listas-comidas article ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #000;
+}
+.listas-comidas article ul li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  background-color: rgb(135, 135, 135);
+  text-align: center;
+  padding: 1rem;
+}
+footer .footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-secondary, .btn-primary {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #a20000;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .listas-comidas {
+    grid-template-columns: 1fr;
+  }
+  header, footer {
+    padding: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+// --------------------
+// MAIN
+// --------------------
+main {
+  text-align: center;
+  padding: 2rem 1rem;
+
+  section {
+    h2 {
+      text-align: center;
+      color: $primary-color;
+    }
+
+    p {
+      text-align: center;
+      color: #000;
+      margin-bottom: 2rem;
+    }
+  }
+
+  section:first-child {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}

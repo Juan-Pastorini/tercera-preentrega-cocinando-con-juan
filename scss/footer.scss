@@ -1,0 +1,14 @@
+// --------------------
+// FOOTER
+// --------------------
+footer {
+  background-color: rgb(135, 135, 135);
+  text-align: center;
+  padding: 1rem;
+
+  .footer-nav ul {
+    list-style: none;
+    @include flex-center;
+    gap: 1rem;
+  }
+}
